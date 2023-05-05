@@ -115,6 +115,9 @@ source $ZSH/oh-my-zsh.sh
 alias cls="reset"
 alias zshrc="reset && subl ~/.zshrc"
 alias src="reset && source ~/.zshrc"
+alias ll="ls -alF"
+alias la="ls -A"
+alias l="ls -CF"
 
 # ubuntu
 alias up="sudo upgrade -y && sudo update -y && sudo apt autoremove -y && sudo apt autoclean -y"
