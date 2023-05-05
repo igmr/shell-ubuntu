@@ -121,6 +121,7 @@ alias l="ls -CF"
 
 # ubuntu
 alias up="sudo upgrade -y && sudo update -y && sudo apt autoremove -y && sudo apt autoclean -y"
+alias pullzsh="bash <(curl -o ~/.zshrc https://raw.githubusercontent.com/igmr/shell-ubuntu/main/.zshrc) && source ~/.zshrc"
 
 # npm
 alias npm:dev="reset && npm run dev"
