@@ -12,7 +12,7 @@ sudo apt upgrade -y  && sudo apt update -y
 # =============================================================================
 # Utilerias
 # =============================================================================
-sudo apt install -y software-properties-common net-tools ufw curl wget neofetch apt-transport-https gpg git zsh
+sudo apt install -y software-properties-common net-tools ufw curl wget neofetch apt-transport-https gpg git zsh bleachbit
 # =============================================================================
 # php8
 # =============================================================================#
