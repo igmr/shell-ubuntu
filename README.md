@@ -25,5 +25,5 @@ ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Mutter
 
 ```shell
 sudo apt install curl -y
-bash <(curl -s )
+bash <(curl -s https://raw.githubusercontent.com/igmr/shell-ubuntu/main/install.sh)
 ```
