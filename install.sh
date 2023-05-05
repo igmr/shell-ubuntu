@@ -190,8 +190,10 @@ fi
 # =============================================================================
 # Cargar de configuración de hyperTerm
 # =============================================================================
-rm -f  ~/.hyper.js
-cp .hyper.js ~/.hyper.js
+if [ -f "$UBUNTU_PATH/.hyper.js" ]; then
+    rm -f  ~/.hyper.js
+fi
+curl -o ~/.hyper.js https://raw.githubusercontent.com/igmr/shell-ubuntu/main/.hyper.js
 
 # =============================================================================
 # Configuración de git
