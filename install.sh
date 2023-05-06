@@ -196,6 +196,12 @@ fi
 curl -o ~/.hyper.js https://raw.githubusercontent.com/igmr/shell-ubuntu/main/.hyper.js
 
 # =============================================================================
+# Actualización de paquetes snap
+# =============================================================================
+sudo snap remove firefox 
+sudo snap refresh
+
+# =============================================================================
 # Configuración de git
 # =============================================================================
 git config --global user.name "$USERNAME"
