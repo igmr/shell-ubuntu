@@ -12,7 +12,7 @@ sudo apt upgrade -y  && sudo apt update -y
 # =============================================================================
 # Utilerias
 # =============================================================================
-sudo apt install -y software-properties-common net-tools ufw curl wget neofetch apt-transport-https gpg git zsh bleachbit
+sudo apt install -y software-properties-common net-tools ufw curl wget neofetch apt-transport-https gpg git zsh rar
 # =============================================================================
 # php8
 # =============================================================================#
@@ -40,7 +40,7 @@ sudo apt install -y fonts-cascadia-code
 # =============================================================================
 # App
 # =============================================================================
-sudo apt install -y gparted filezilla solaar vlc
+sudo apt install -y gparted filezilla solaar vlc bleachbit
 # =============================================================================
 
 # =============================================================================
