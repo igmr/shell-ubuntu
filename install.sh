@@ -141,7 +141,7 @@ sudo snap install mysql-workbench-community
 # =============================================================================
 # Actualización y limpiar sistema
 # =============================================================================
-sudo apt upgrade -y  && sudo apt autoremove -y && sudo apt autoclean -y
+sudo apt update -y  && sudo apt autoremove -y && sudo apt autoclean -y
 
 # =============================================================================
 # Configuración del cortafuegos 
@@ -156,12 +156,11 @@ sudo ufw enable
 # Configuración de Apache2
 # =============================================================================
 sudo systemctl enable apache2
-sudo ufw allow http
 sudo chown www-data:www-data /var/www/html/ -R
 sudo chown -R $USER:$USER /var/www
 
 # =============================================================================
-# Configuración de php8
+# Configuración de Apache2 con php8
 # =============================================================================
 sudo a2enmod php8.1
 sudo systemctl restart apache2
@@ -195,10 +194,14 @@ if [ -f "$UBUNTU_PATH/.hyper.js" ]; then
 fi
 curl -o ~/.hyper.js https://raw.githubusercontent.com/igmr/shell-ubuntu/main/.hyper.js
 
+
+# =============================================================================
+# Eliminar paquete snap
+# =============================================================================
+sudo snap remove firefox 
 # =============================================================================
 # Actualización de paquetes snap
 # =============================================================================
-sudo snap remove firefox 
 sudo snap refresh
 
 # =============================================================================
