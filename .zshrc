@@ -120,7 +120,7 @@ alias la="ls -A"
 alias l="ls -CF"
 
 # ubuntu
-alias up="sudo upgrade -y && sudo update -y && sudo apt autoremove -y && sudo apt autoclean -y"
+alias up="sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y"
 alias pullzsh="bash <(curl -s https://raw.githubusercontent.com/igmr/shell-ubuntu/main/.zshrc-pull.sh) && source ~/.zshrc"
 alias pullhyper="bash <(curl -s https://raw.githubusercontent.com/igmr/shell-ubuntu/main/.hyper-pull.sh)"
 
