@@ -143,6 +143,7 @@ alias ci:start="reset && php spark serve"
 
 # Git
 alias push="git push origin main"
+alias git:undo="git reset --soft HEAD~1"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
