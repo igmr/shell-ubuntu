@@ -142,8 +142,8 @@ alias laravel:reset="reset && php artisan migrate:refresh --seed"
 alias ci:start="reset && php spark serve"
 
 # Git
-alias push="git push origin main"
-alias git:undo="git reset --soft HEAD~1"
+alias push="reset && git push origin main"
+alias git:undo="reset && git reset --soft HEAD~1"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
