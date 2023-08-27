@@ -118,7 +118,7 @@ sudo apt-get install sublime-text
 # App Start UML
 # https://staruml.io/
 # =============================================================================
-wget https://staruml.io/download/releases-v5/StarUML_5.1.0_amd64.deb
+wget https://staruml.io/api/download/releases-v5/StarUML_5.1.0_amd64.deb
 sudo dpkg -i StarUML_5.1.0_amd64.deb
 sudo apt install -f -y
 sudo rm -f StarUML_5.1.0_amd64.deb
