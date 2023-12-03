@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -f ~/.zshrc ];then
+if [ -f ~/.hyper.js ];then
     rm -f ~/.hyper.js
 fi
 
