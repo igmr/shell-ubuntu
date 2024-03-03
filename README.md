@@ -70,6 +70,10 @@ cat ~/.ssh/id_rsa.pub
 
 ```sh
 # =============================================================================
+# Install MySQL
+# =============================================================================
+sudo apt install -y mysql-client mysql-server mysql-common
+# =============================================================================
 # Iniciar servicio de MySQL
 # =============================================================================
 sudo systemctl start mysql
@@ -123,8 +127,6 @@ sudo mv composer.phar /usr/local/bin/composer
 ```
 
 ## Configuración de Zsh && OhMyZsh
-
-Instalar OhMyZsh
 
 ```sh
 # =============================================================================
