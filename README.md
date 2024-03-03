@@ -83,43 +83,6 @@ sudo systemctl enable mysql
 sudo mysql --user="root" --execute="ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'MySQL94.';"
 ```
 
-## Configuración de Zsh
-
-```sh
-# =============================================================================
-# Cambiar Shell
-# =============================================================================
-chsh -s $(which zsh)
-# =============================================================================
-# Ejecutar Zsh
-# =============================================================================
-> zsh
-zsh.newuser-install.
-You are seeing this message because you have no zsh startup files
-(the files .zshenv, .zprofile, .zshrc, .zlogin in the directory
-~). This function can help you with a few settings that should
-make your use of the shell easier.
-
-You can:
-
-(q)  Quit and do nothing.  The function will be run again next time.
-
-(0)  Exit, creating the file ~/.zshrc containing just a comment.
-     That will prevent this function being run again.
-
-(1)  Continue to the main menu.
-
-(2)  Populate your ~/.zshrc with the configuration recommended
-     by the system administrator and exit (you will need to edit
-     the file by hand, if so desired).
-
---- Type one of the keys in parentheses --- 0
-# =============================================================================
-# Reiniciar
-# =============================================================================
-reboot
-```
-
 ## Instalacion de PHP8.1
 
 ```sh
