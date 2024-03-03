@@ -1,27 +1,26 @@
 # Ubuntu .dotfile
 
-```shell
-            .-/+oossssoo+/-.               igmr@Dell-OptiPlex-7040 
-        `:+ssssssssssssssssss+:`           ----------------------- 
-      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 22.04.3 LTS x86_64 
-    .ossssssssssssssssssdMMMNysssso.       Host: OptiPlex 7040 
-   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 6.2.0-37-generic 
-  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 0 hour, 00 mins 
- /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 1911 (dpkg), 14 (snap) 
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: zsh 5.8.1 
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 1920x1080 
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   DE: Unity 
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Mutter 
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   WM Theme: Adwaita 
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: Yaru-dark [GTK2/3] 
- /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    Icons: Yaru [GTK2/3] 
-  +sssssssssdmydMMMMMMMMddddyssssssss+     Terminal: HyperTerm 
-   /ssssssssssshdmNNNNmyNMMMMhssssss/      Terminal Font: Cascadia Code 
-    .ossssssssssssssssssdMMMNysssso.       CPU: Intel i5-6500 (4) @ 3.600GHz 
-      -+sssssssssssssssssyyyssss+-         GPU: Intel HD Graphics 530 
-        `:+ssssssssssssssssss+:`           Memory: 2980MiB / 15868MiB 
+```sh
+            .-/+oossssoo+/-.               igmr@DellOptiPlex7050 
+        `:+ssssssssssssssssss+:`           --------------------- 
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 22.04.4 LTS x86_64 
+    .ossssssssssssssssssdMMMNysssso.       Host: OptiPlex 7050 
+   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 6.5.0-21-generic 
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 55 mins 
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 1644 (dpkg), 9 (snap) 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.1.16 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Terminal: /dev/pts/0 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   CPU: Intel i7-6700 (8) @ 4.000GHz 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   GPU: Intel HD Graphics 530 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Memory: 844MiB / 15846MiB 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.
+ /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/                            
+  +sssssssssdmydMMMMMMMMddddyssssssss+                             
+   /ssssssssssshdmNNNNmyNMMMMhssssss/
+    .ossssssssssssssssssdMMMNysssso.
+      -+sssssssssssssssssyyyssss+-
+        `:+ssssssssssssssssss+:`
             .-/+oossssoo+/-.
-
 ```
 
 ## Instalación de paquetes
@@ -39,14 +38,14 @@ bash <(curl -s https://raw.githubusercontent.com/igmr/shell-ubuntu/main/folder.s
 
 ## Descargar configuración de .zshrc para Ubuntu
 
-```shell
+```sh
 bash <(curl -s https://raw.githubusercontent.com/igmr/shell-ubuntu/main/.zshrc-pull.sh)
 source ~/.zshrc
 ```
 
 ## Descargar configuración de .hyper.js para Ubuntu
 
-```shell
+```sh
 bash <(curl -s https://raw.githubusercontent.com/igmr/shell-ubuntu/main/.hyper-pull.sh)
 ```
 
@@ -120,6 +119,25 @@ You can:
 # =============================================================================
 reboot
 ```
+
+## Instalacion de PHP8.1
+
+```sh
+# =============================================================================
+# Instalación de PHP8.1
+# =============================================================================
+sudo apt install -y php8.1 libapache2-mod-php8.1 php8.1-pgsql php8.1-sqlite3 php8.1-interbase php8.1-odbc php8.1-sybase php8.1-mysql php8.1-common php8.1-cli php8.1-common php8.1-cli php8.1-opcache php8.1-readline php8.1-mbstring php-pear php8.1-intl php8.1-dom php8.1-curl php8.1-cgi php-json
+# =============================================================================
+# Instalación de composer
+# =============================================================================
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+
+sudo mv composer.phar /usr/local/bin/composer
+```
+
 ## Instalacion de PHP8.2
 
 ```sh
@@ -169,7 +187,7 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZS
 
 ## Configuración de NodeJS
 
-```shell
+```sh
 # =============================================================================
 # Instalación de nvm
 # =============================================================================
