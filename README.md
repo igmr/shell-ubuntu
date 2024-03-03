@@ -85,6 +85,10 @@ sudo systemctl enable mysql
 # Establecer contraseña de MySQL
 # =============================================================================
 sudo mysql --user="root" --execute="ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'MySQL94.';"
+# =============================================================================
+# Configurar mysql in firewall
+# =============================================================================
+sudo ufw allow 3306
 ```
 
 ## Instalacion de PHP8.1
