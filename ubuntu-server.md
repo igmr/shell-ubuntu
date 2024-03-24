@@ -2,9 +2,9 @@
 
 ## SSH
 
-1. Acceder al directorio .SSH.
-2. Generar clave SSH.
-3. Crear (`nano ~/.ssh/config`) y agregar configuración de conexión SSH.
+1. Acceder al directorio `~/.ssh`.
+2. Generar clave SSH (`ssh-keygen -b 4096 -t rsa`).
+3. Crear archivo config (`nano ~/.ssh/config`) y agregar configuración de conexión SSH hacia el servidor.
 
 ```bash
 host             <name>
