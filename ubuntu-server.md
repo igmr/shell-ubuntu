@@ -47,7 +47,7 @@ scp ~/Downloads/install.run ubuntu@192.168.100.100:/home/ubuntu
 ```bash
 Enter server address: <ip-server>
 Enter username: <user-nas>
-Enter password: <password-user-nas<
+Enter password: <password-user-nas>
 Connecting...
 The SSL certificate of the Synology NAS is not trusted. To learn how to obtain a valid certificate, please have a registered domain by setting up DDNS (http://sy.to/ddns) and applying for Let's Encrypt (http://sy.to/letsencrypt) certificate. Proceed anyway? [y/n](default: y): y
 
