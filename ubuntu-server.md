@@ -21,3 +21,8 @@ ssh-copy-id -i path/to/ssh.pub <username>@<ip-server>
 ssh <host>
 ```
 
+## Actualización del sistema
+
+```bash
+sudo apt update -y  && sudo apt autoremove -y && sudo apt autoclean -y
+```
