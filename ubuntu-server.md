@@ -55,7 +55,7 @@ sudo apt install -y gcc
 1. Copiar archivo a servidor
 
 ```bash
-scp ~/Downloads/install.run ubuntu@192.168.100.100:/home/ubuntu
+scp ~/Downloads/install.run <username>@<ip-server>:/home/ubuntu
 ```
 
 2. Acceder a servidor
