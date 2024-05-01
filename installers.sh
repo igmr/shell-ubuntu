@@ -11,31 +11,15 @@ sudo apt install -y software-properties-common net-tools ufw curl wget neofetch 
 # =============================================================================
 # Install App
 # =============================================================================
-sudo apt install -y gparted filezilla solaar vlc bleachbit
+sudo apt install -y gparted filezilla solaar vlc
 # =============================================================================
 # Install Cascadia-Code font
 # =============================================================================
 sudo apt install -y fonts-cascadia-code
 # =============================================================================
-# Install PHP 8.1
-# =============================================================================
-sudo apt install -y php8.1 libapache2-mod-php8.1 php8.1-pgsql php8.1-sqlite3 php8.1-interbase php8.1-odbc php8.1-sybase php8.1-mysql php8.1-common php8.1-cli php8.1-common php8.1-cli php8.1-opcache php8.1-readline php8.1-mbstring php-pear php8.1-intl php8.1-dom php8.1-curl php8.1-cgi php-json
-# =============================================================================
 # Install Apache2
 # =============================================================================
 sudo apt install -y apache2 apache2-utils apache2-doc
-# =============================================================================
-# Install MySQL
-# =============================================================================
-sudo apt install -y mysql-client mysql-server mysql-common
-# =============================================================================
-# Install Composer
-# =============================================================================
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('sha384', 'composer-setup.php') === 'edb40769019ccf227279e3bdd1f5b2e9950eb000c3233ee85148944e555d97be3ea4f40c3c2fe73b22f875385f6a5155') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
-sudo mv composer.phar /usr/local/bin/composer
 # =============================================================================
 # Install 1Password App
 # =============================================================================
@@ -103,17 +87,9 @@ sudo snap install mysql-workbench-community
 # =============================================================================
 sudo apt install -y openssh-server openssh-client
 # =============================================================================
-# Install node
-# =============================================================================
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-source ~/.zshrc
-nvm install node
-# =============================================================================
 # Actualización y limpiar sistema
 # =============================================================================
 sudo apt update -y  && sudo apt autoremove -y && sudo apt autoclean -y
-
-
 
 # =============================================================================
 # =============================================================================
